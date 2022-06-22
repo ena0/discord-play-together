@@ -22,6 +22,7 @@ body:
     attributes:
       label: how to redo the bug ?
       description: Tell us how to redo the bug
+      value: "First, you launch the package and 'Voilà'"
     validations:
       required: true
   - type: input
