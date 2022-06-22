@@ -5,7 +5,7 @@ labels: ["bug"]
 assignees:
   - ena0
 body:
-  - type: 
+  - type: markdown
     attributes:
       values: Thanks for taking the time to fill out this bug report!
   - type: textarea
