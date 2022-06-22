@@ -1,5 +1,5 @@
-blanc_issues_enabled: false
-contact_link:
+blanc_issues_enabled: true
+contact_links:
   - name: Discord
     url: https://whois.mrrobot.app
     about: Here my discord account
