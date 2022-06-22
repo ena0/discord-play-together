@@ -57,9 +57,9 @@ createCode(channel_id, {
 
 that will return you something like that:
 
-```json
+```js
 {
-	code: "https://discord.com/invite/123456",
+    code: "https://discord.com/invite/123456",
     expireAt: 1234567891,
     activity: {
         id: 880218394199220334,
