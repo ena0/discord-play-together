@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Constants.js</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="discordPlayTogether.html">discordPlayTogether</a></li></ul><h3><a href="global.html">Global</a></h3></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p>Source</p>
+                    <h1>Constants.js</h1>
+                </header>
+                
+
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>/**
+ * the default applications options
+ * @typedef defaultApplicationsOptions
+ * 
+ * @property {Snowflake} youtube The id for youtube
+ * @property {Snowflake} youtubedev The id for youtubedev
+ * @property {Snowflake} poker The id for poker
+ * @property {Snowflake} betrayal The id for betrayal
+ * @property {Snowflake} fishing The id for fishing
+ * @property {Snowflake} chess The id for chess
+ * @property {Snowflake} chessdev The id for chessdev
+ * @property {Snowflake} lettertile The id for lettertile
+ * @property {Snowflake} wordsnack The id for wordsnack
+ * @property {Snowflake} doodlecrew The id for doodlecrew
+ * @property {Snowflake} spellcast The id for spellcast
+ * @property {Snowflake} checkers The id for checkers
+ * @property {Snowflake} puttparty The id for puttparty
+ * @property {Snowflake} sketchheads The id for sketchheads
+ * @property {Snowflake} ocho The id for ocho
+ */
+
+exports.defaultApplicationsOptions = {
+    youtube: '880218394199220334',
+    youtubedev: '880218832743055411',
+    poker: '755827207812677713',
+    betrayal: '773336526917861400',
+    fishing: '814288819477020702',
+    chess: '832012774040141894',
+    chessdev: '832012586023256104',
+    lettertile: '879863686565621790',
+    wordsnack: '879863976006127627',
+    doodlecrew: '878067389634314250',
+    awkword: '879863881349087252',
+    spellcast: '852509694341283871',
+    checkers: '832013003968348200',
+    puttparty: '763133495793942528',
+    sketchheads: '902271654783242291',
+    ocho: '832025144389533716',
+}
+
+/**
+ * the default options
+ * 
+ * @typedef defaultActivityOptions
+ * 
+ * @property {Number} duration The length of time the invitation will remain valid
+ * @property {Boolean} neverExpire If the ivitation will never expire
+ * @property {Number} maxUses The max utilisation of the invitation
+ */
+exports.defaultActivityOptions = {
+    duration: 86400,
+    neverExpire: false,
+    maxUses: 0
+}</code></pre>
+        </article>
+    </section>
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

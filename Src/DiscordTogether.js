@@ -1,17 +1,39 @@
+const { Client } = require("discord.js")
+
 const fetch = require('node-fetch')
 const merge = require("deepmerge")
 
 const { defaultApplicationsOptions, defaultActivityOptions } = require("./Constants")
 
 class discordPlayTogether {
+    /**
+     * @param {Client} client The discord client 
+     * @param {defaultApplicationsOptions} [applications] The applications you can use
+     */
     constructor(client, applications = {}) {
         if(!client) throw new SyntaxError('Invalid Discord.Client')
 
+        /**
+         * The discord client
+         * 
+         * @type {Client}
+         */
         this.client = client
 
+        /**
+         * The applications
+         * 
+         * @type {defaultApplicationsOptions}
+         */
         this.applications = merge(defaultApplicationsOptions, applications)
     }
 
+    /**
+    * Create a code to use discord together
+    * 
+    * @param {Snowflake} voiceChannel The channel where you can play
+    * @param {defaultActivityOptions} options The options for the activity
+    */
     async createCode(voiceChannel, options = {}) {
 
         const mergerdOptions = merge(defaultActivityOptions, options)

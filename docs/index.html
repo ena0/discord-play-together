@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Home</title>
+
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./build/entry.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:100,400,700|Inconsolata,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <link type="text/css" rel="stylesheet" href="https://jmblog.github.io/color-themes-for-google-code-prettify/themes/tomorrow-night.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/app.min.css">
+  <link type="text/css" rel="stylesheet" href="styles/iframe.css">
+  <link type="text/css" rel="stylesheet" href="">
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+
+  
+</head>
+
+
+
+<body class="layout small-header">
+    <div id="stickyNavbarOverlay"></div>
+    
+
+<div class="top-nav">
+    <div class="inner">
+        <a id="hamburger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+        <div class="logo">
+            
+            
+        </div>
+        <div class="menu">
+            
+            <div class="navigation">
+                <a
+                    href="index.html"
+                    class="link"
+                >
+                    Documentation
+                </a>
+                
+                
+                
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="main">
+        <div
+            class="sidebar "
+            id="sidebarNav"
+        >
+            
+            <nav>
+                
+                    <h2><a href="index.html">Documentation</a></h2><div class="category"><h3>Classes</h3><ul><li><a href="discordPlayTogether.html">discordPlayTogether</a></li></ul><h3><a href="global.html">Global</a></h3></div>
+                
+            </nav>
+        </div>
+        <div class="core" id="main-content-wrapper">
+            <div class="content">
+                <header class="page-title">
+                    <p></p>
+                    <h1>Home</h1>
+                </header>
+                
+
+
+
+    
+
+
+    <h3> </h3>
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+    <section>
+        <article><h1>Discord-play-together</h1>
+<h2>To Do</h2>
+<ul>
+<li>[ ] Improve the documentation
+<ul>
+<li>[x] Add github page with the documentation (at https://ena0.github.io/discord-play-together/)</li>
+<li>[ ] correct orthography errors</li>
+</ul>
+</li>
+<li>[ ] Improve the package
+<ul>
+<li>[ ] Add some event</li>
+<li>[ ] Add management features</li>
+</ul>
+</li>
+</ul>
+<h2>Table of content</h2>
+<ul>
+<li><a href="#discord-play-together">Discord-play-together</a></li>
+<li><a href="#to-do">To Do</a></li>
+<li><a href="#table-of-content">Table of content</a></li>
+<li><a href="#installation">Installation</a></li>
+<li><a href="#activity-list">activity list</a></li>
+<li><a href="#usage">usage</a>
+<ul>
+<li><a href="#create-a-code">create a code</a></li>
+</ul>
+</li>
+</ul>
+<h2>Installation</h2>
+<pre class="prettyprint source lang-bash"><code>npm install discord-play-together
+</code></pre>
+<h2>activity list</h2>
+<ul>
+<li><code>youtube</code> / <code>youtubedev</code></li>
+<li><code>poker</code></li>
+<li><code>betrayal</code></li>
+<li><code>fishing</code></li>
+<li><code>chess</code> / <code>chessdev</code></li>
+<li><code>lettertile</code></li>
+<li><code>wordsnack</code></li>
+<li><code>doodlecrew</code></li>
+<li><code>awkword</code></li>
+<li><code>spellcast</code></li>
+<li><code>checkers</code></li>
+<li><code>puttparty</code></li>
+<li><code>sketchheads</code></li>
+<li><code>ocho</code></li>
+</ul>
+<h2>Usage</h2>
+<h3>Create a code</h3>
+<pre class="prettyprint source lang-javascript"><code>createCode(channel_id, {
+    activity: &quot;youtube&quot;, //choose one form the list
+	/*optionnal*/ duration: 86400, //in ms 
+	/*optionnal*/ neverExpire: false,
+	/*optionnal*/ maxUses: 0
+})
+</code></pre>
+<p>that will return you something like that:</p>
+<pre class="prettyprint source lang-json"><code>{
+	code: &quot;https://discord.com/invite/123456&quot;,
+    expireAt: 1234567891,
+    activity: {
+        id: 880218394199220334,
+        name: &quot;youtube&quot;,
+        icon: &quot;&quot;,
+        description: &quot;&quot;,
+    },
+    guild: {...}, //the guild
+    channel: {...}, //the channel
+    inviter: {...} //the user
+}
+</code></pre></article>
+    </section>
+
+
+
+
+
+
+            </div>
+            
+            <footer class="footer">
+                <div class="content has-text-centered">
+                    <p>Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.6.10</a></p>
+                    <p class="sidebar-created-by">
+                        <a href="https://github.com/SoftwareBrothers/better-docs" target="_blank">BetterDocs theme</a> provided with <i class="fas fa-heart"></i> by
+                        <a href="http://softwarebrothers.co" target="_blank">SoftwareBrothers - JavaScript Development Agency</a>
+                    </p>
+                </div>
+            </footer>
+            
+        </div>
+        <div id="side-nav" class="side-nav">
+        </div>
+    </div>
+<script src="scripts/app.min.js"></script>
+<script>PR.prettyPrint();</script>
+<script src="scripts/linenumber.js"> </script>
+
+
+</body>
+</html>

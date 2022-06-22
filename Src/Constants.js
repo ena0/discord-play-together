@@ -1,3 +1,24 @@
+/**
+ * the default applications options
+ * @typedef defaultApplicationsOptions
+ * 
+ * @property {Snowflake} youtube The id for youtube
+ * @property {Snowflake} youtubedev The id for youtubedev
+ * @property {Snowflake} poker The id for poker
+ * @property {Snowflake} betrayal The id for betrayal
+ * @property {Snowflake} fishing The id for fishing
+ * @property {Snowflake} chess The id for chess
+ * @property {Snowflake} chessdev The id for chessdev
+ * @property {Snowflake} lettertile The id for lettertile
+ * @property {Snowflake} wordsnack The id for wordsnack
+ * @property {Snowflake} doodlecrew The id for doodlecrew
+ * @property {Snowflake} spellcast The id for spellcast
+ * @property {Snowflake} checkers The id for checkers
+ * @property {Snowflake} puttparty The id for puttparty
+ * @property {Snowflake} sketchheads The id for sketchheads
+ * @property {Snowflake} ocho The id for ocho
+ */
+
 exports.defaultApplicationsOptions = {
     youtube: '880218394199220334',
     youtubedev: '880218832743055411',
@@ -17,6 +38,15 @@ exports.defaultApplicationsOptions = {
     ocho: '832025144389533716',
 }
 
+/**
+ * the default options
+ * 
+ * @typedef defaultActivityOptions
+ * 
+ * @property {Number} duration The length of time the invitation will remain valid
+ * @property {Boolean} neverExpire If the ivitation will never expire
+ * @property {Number} maxUses The max utilisation of the invitation
+ */
 exports.defaultActivityOptions = {
     duration: 86400,
     neverExpire: false,
