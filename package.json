@@ -1,16 +1,28 @@
 {
   "name": "discord-play-together",
-  "version": "0.1.0",
-  "description": "",
+  "version": "0.1.2",
+  "description": "Make invitation for discord-together",
   "main": "index.js",
   "scripts": {
     "test": "echo \"No test specified\""
   },
   "keywords": [],
-  "author": "",
+  "author": "ena0",
   "license": "ISC",
   "dependencies": {
     "deepmerge": "^4.2.2",
     "node-fetch": "^2.6.1"
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ena0/discord-play-together.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ena0/discord-play-together/issues"
+  },
+  "homepage": "https://ena0.github.io/discord-play-together/"
 }
