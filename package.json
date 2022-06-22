@@ -1,6 +1,6 @@
 {
   "name": "discord-play-together",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Make invitation for discord-together",
   "main": "index.js",
   "scripts": {
