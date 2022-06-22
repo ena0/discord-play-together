@@ -1,5 +1,5 @@
 name: Bug Report
-description: File a bug report
+description: Report a bug
 title: "[Bug]: "
 labels: ["bug"]
 assignees:
@@ -9,7 +9,7 @@ body:
     attributes:
       value: Thanks for taking the time to fill out this bug report!
   - type: textarea
-    id: what-happened
+    id: what
     attributes:
       label: What happened?
       description: Also tell us, what did you expect to happen?
@@ -17,5 +17,16 @@ body:
       value: "A bug happened!"
     validations:
       required: true
+  - type: textarea
+    id: how
+    attributes:
+      label: how to redo the bug ?
+      description: Tell us how to redo the bug
+  - type: input
+    id: version
+    attributes: 
+      label: What version do you use
+      value: "v"
+      
       
       
