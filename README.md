@@ -1,5 +1,5 @@
 # Discord-play-together
-
+[![downloadsBadge](https://img.shields.io/npm/dt/discord-play-together?style=for-the-badge)](https://npmjs.com/discord-play-together 'Download') [![versionBadge](https://img.shields.io/npm/v/discord-play-together?style=for-the-badge)](https://npmjs.com/discord-play-together 'Version') [![documentationBadge](https://img.shields.io/badge/Documentation-Click%20here-blue?style=for-the-badge)](https://ena0.github.io/discord-play-together/ 'Documentation')
 ## To Do
 
 - [ ] Improve the documentation
@@ -72,6 +72,3 @@ that will return you something like that:
   inviter: {...} //the user
 }
 ```
-
-
-

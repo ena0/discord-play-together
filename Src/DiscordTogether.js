@@ -1,5 +1,6 @@
 const { Client } = require("discord.js")
 
+//! the used version of node-fetch can be dangerous
 const fetch = require('node-fetch')
 const merge = require("deepmerge")
 
