@@ -18,7 +18,7 @@
   },
   "devDependencies": {
     "discord.js": "^13.8.1",
-    "better-docs": "^2.7.2"
+    "clean-jsdoc-theme": "^4.0.7"
   },
   "repository": {
     "type": "git",

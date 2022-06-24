@@ -7,8 +7,29 @@
    "opts": {
       "destination": "./docs/",
       "recurse": true,
-      "template": "./node_modules/better-docs",
-      "readme": "./README.md"
+      "template": "./node_modules/clean-jsdoc-theme",
+      "readme": "./README.md",
+      "theme_opts": {
+         "title": "discord-play-together",
+         "default_theme": "dark",
+         "base_url": "https://ena0.github.io/discord-play-together/",
+         "resizeable": {
+            "navbar": {
+            "min": "300",
+            "max": "600"
+            }
+         },
+         "menu": [
+            {
+               "title": "Github",
+               "link": "https://github.com/ena0/discord-play-together"
+            },
+            {
+               "title": "Npm",
+               "link": "https://www.npmjs.com/package/discord-play-together"
+            }
+         ]
+      }
    },
    "templates": {
       "cleverLinks": false,
@@ -19,5 +40,9 @@
          "outputSourceFiles": true,
          "includeDate": false
       }
+   },
+   "markdown": {
+      "hardwrap": false,
+      "idInHeadings": true
    }
 }
