@@ -1,3 +1,5 @@
+const { Snowflake, Guild, Channel, User } = require("discord.js")
+
 /**
  * the default applications options
  * @typedef defaultApplicationsOptions
@@ -43,12 +45,38 @@ exports.defaultApplicationsOptions = {
  * 
  * @typedef defaultActivityOptions
  * 
- * @property {Number} duration The length of time the invitation will remain valid
- * @property {Boolean} neverExpire If the ivitation will never expire
- * @property {Number} maxUses The max utilisation of the invitation
+ * @property {defaultApplicationsOptions} activity Tha activity you want to start
+ * @property {Number} [duration] The length of time the invitation will remain valid
+ * @property {Boolean} [neverExpire] If the ivitation will never expire
+ * @property {Number} [maxUses] The max utilisation of the invitation
  */
 exports.defaultActivityOptions = {
     duration: 86400,
     neverExpire: false,
     maxUses: 0
 }
+
+// TODO: search the type returned by `responses.target_application.icon` for icon property
+/**
+ * The activity data
+ * 
+ * @typedef activityData
+ * 
+ * @property {Snowflake} id
+ * @property {String} name
+ * @property {?} icon 
+ * @property {String} description
+ */
+
+/**
+ * The return data
+ * 
+ * @typedef returnData
+ * 
+ * @property {String} code
+ * @property {Number} expireAt 
+ * @property {activityData} activity
+ * @property {Guild} guild
+ * @property {Channel} Channel
+ * @property {User} inviter
+ */

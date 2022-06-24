@@ -16,7 +16,10 @@
   "directories": {
     "doc": "docs"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "discord.js": "^13.8.1",
+    "better-docs": "^2.7.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ena0/discord-play-together.git"

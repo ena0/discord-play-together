@@ -3,7 +3,7 @@ const { Client } = require("discord.js")
 const fetch = require('node-fetch')
 const merge = require("deepmerge")
 
-const { defaultApplicationsOptions, defaultActivityOptions } = require("./Constants")
+const { defaultApplicationsOptions, defaultActivityOptions, returnData } = require("./Constants")
 
 class discordPlayTogether {
     /**
@@ -33,6 +33,16 @@ class discordPlayTogether {
     * 
     * @param {Snowflake} voiceChannel The channel where you can play
     * @param {defaultActivityOptions} options The options for the activity
+    * 
+    * @return {returnData} The code data
+    * 
+    * @example
+    *   createCode(881574779654651954, {
+    *       activity: "youtube",
+    *       duration: 86400,
+    *       neverExpire: False,
+    *       maxUses: 0
+    *   })
     */
     async createCode(voiceChannel, options = {}) {
 

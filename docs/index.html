@@ -152,25 +152,25 @@
 <h2>Usage</h2>
 <h3>Create a code</h3>
 <pre class="prettyprint source lang-javascript"><code>createCode(channel_id, {
-    activity: &quot;youtube&quot;, //choose one form the list
-	/*optionnal*/ duration: 86400, //in ms 
-	/*optionnal*/ neverExpire: false,
-	/*optionnal*/ maxUses: 0
+  activity: &quot;youtube&quot;, //choose one from the list
+	duration: 86400, //in ms 
+	neverExpire: false,
+	maxUses: 0
 })
 </code></pre>
 <p>that will return you something like that:</p>
-<pre class="prettyprint source lang-json"><code>{
-	code: &quot;https://discord.com/invite/123456&quot;,
-    expireAt: 1234567891,
-    activity: {
-        id: 880218394199220334,
-        name: &quot;youtube&quot;,
-        icon: &quot;&quot;,
-        description: &quot;&quot;,
-    },
-    guild: {...}, //the guild
-    channel: {...}, //the channel
-    inviter: {...} //the user
+<pre class="prettyprint source lang-js"><code>{
+  code: &quot;https://discord.com/invite/123456&quot;,
+  expireAt: 1234567891,
+  activity: {
+    id: 880218394199220334,
+    name: &quot;youtube&quot;,
+    icon: &quot;&quot;,
+    description: &quot;&quot;,
+  },
+  guild: {...}, //the guild
+  channel: {...}, //the channel
+  inviter: {...} //the user
 }
 </code></pre></article>
     </section>

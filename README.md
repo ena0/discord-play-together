@@ -48,10 +48,10 @@ npm install discord-play-together
 
 ```javascript
 createCode(channel_id, {
-    activity: "youtube", //choose one form the list
-	/*optionnal*/ duration: 86400, //in ms 
-	/*optionnal*/ neverExpire: false,
-	/*optionnal*/ maxUses: 0
+  activity: "youtube", //choose one from the list
+	duration: 86400, //in ms 
+	neverExpire: false,
+	maxUses: 0
 })
 ```
 
@@ -59,17 +59,17 @@ that will return you something like that:
 
 ```js
 {
-    code: "https://discord.com/invite/123456",
-    expireAt: 1234567891,
-    activity: {
-        id: 880218394199220334,
-        name: "youtube",
-        icon: "",
-        description: "",
-    },
-    guild: {...}, //the guild
-    channel: {...}, //the channel
-    inviter: {...} //the user
+  code: "https://discord.com/invite/123456",
+  expireAt: 1234567891,
+  activity: {
+    id: 880218394199220334,
+    name: "youtube",
+    icon: "",
+    description: "",
+  },
+  guild: {...}, //the guild
+  channel: {...}, //the channel
+  inviter: {...} //the user
 }
 ```
 
