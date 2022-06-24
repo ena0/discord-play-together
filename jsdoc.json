@@ -26,7 +26,11 @@
             },
             {
                "title": "Npm",
+<<<<<<< HEAD
                "link": "https://www.npmjs.com/package/discord-play-together"
+=======
+               "link": "hhttps://www.npmjs.com/package/discord-play-together"
+>>>>>>> main
             }
          ]
       }
